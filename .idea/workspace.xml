@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a06092d3-16fb-4e16-94b3-04bbba992228" name="Changes" comment="Commit inicial">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/constants/MovieAppConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/dto/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/exception/MovieErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/MoviesRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/impl/MoviesRestClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/bieniek/learnwiremock/service/MovieRestClientTest.java" afterDir="false" />
+    <list default="true" id="a06092d3-16fb-4e16-94b3-04bbba992228" name="Changes" comment="Desenvolvimento">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/bieniek/learnwiremock/service/MoviesRestClientServerFaultTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/400-invalid-input.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/404-movieId.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/404-moviename.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/404-movieyear.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/add-movie-template-approach1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/add-movie-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/add-movie.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/all-movies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/avengers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/movie-byName-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/movie-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/movie.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/updatemovie-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/__files/year-template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/MoviesRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/MoviesRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/impl/MoviesRestClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/bieniek/learnwiremock/service/impl/MoviesRestClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/bieniek/learnwiremock/service/MovieRestClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/bieniek/learnwiremock/service/MovieRestClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +103,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_directory_selection": "E:/Cursos/WireMock/movie-app/src/test/java/br/com/bieniek/learnwiremock",
-    "last_opened_file_path": "E:/Cursos/WireMock/movie-app/src/main/java/br/com/bieniek/learnwiremock",
+    "last_opened_file_path": "E:/Cursos/WireMock/movie-app/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +117,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Cursos\WireMock\movie-app\src\test\resources" />
       <recent name="E:\Cursos\WireMock\movie-app\src\main\java\br\com\bieniek\learnwiremock" />
       <recent name="E:\Cursos\WireMock\movie-app\src\test\java\br\com\bieniek\learnwiremock" />
     </key>
@@ -118,11 +128,11 @@
       <recent name="br.com.bieniek.learnwiremock.dto.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.bieniek.learnwiremock.service.impl" />
       <recent name="br.com.bieniek.learnwiremock.service" />
+      <recent name="br.com.bieniek.learnwiremock.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MovieRestClientTest">
+  <component name="RunManager" selected="Gradle.MoviesRestClientServerFaultTest">
     <configuration name="MovieRestClientTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,6 +170,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;br.com.bieniek.learnwiremock.service.MovieRestClientTest.getAllMovies&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MoviesRestClientServerFaultTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;br.com.bieniek.learnwiremock.service.MoviesRestClientServerFaultTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,6 +246,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MoviesRestClientServerFaultTest" />
         <item itemvalue="Gradle.MovieRestClientTest" />
         <item itemvalue="Gradle.MovieRestClientTest.getAllMovies" />
         <item itemvalue="Gradle.movie-app [build]" />
@@ -228,7 +262,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680664210100</updated>
-      <workItem from="1680664211704" duration="7292000" />
+      <workItem from="1680664211704" duration="10061000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1680665114772</created>
@@ -237,11 +271,19 @@
       <option name="project" value="LOCAL" />
       <updated>1680665114772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Desenvolvimento">
+      <created>1680750136778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680750136778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial" />
+    <MESSAGE value="Desenvolvimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvimento" />
   </component>
 </project>

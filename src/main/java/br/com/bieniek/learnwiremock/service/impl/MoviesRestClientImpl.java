@@ -1,5 +1,6 @@
 package br.com.bieniek.learnwiremock.service.impl;
 
+import br.com.bieniek.learnwiremock.constants.MovieAppConstants;
 import br.com.bieniek.learnwiremock.dto.Movie;
 import br.com.bieniek.learnwiremock.exception.MovieErrorResponse;
 import br.com.bieniek.learnwiremock.service.MoviesRestClient;
@@ -82,7 +83,7 @@ public class MoviesRestClientImpl implements MoviesRestClient {
     }
 
 
-    public List<Movie> retreieveMovieByYear(Integer year) {
+    public List<Movie> retrieveMovieByYear(Integer year) {
         String retrieveByYearUri = UriComponentsBuilder.fromUriString( MOVIE_BY_YEAR_QUERY_PARAM_V1)
                 .queryParam("year", year)
                 .buildAndExpand()
@@ -164,5 +165,29 @@ public class MoviesRestClientImpl implements MoviesRestClient {
 
         return response;
 
+    }
+
+    public String deleteMovieByName(String movieName){
+
+        try{
+            String deleteMovieByNameURI = UriComponentsBuilder.fromUriString(MOVIE_BY_NAME_QUERY_PARAM_V1)
+                    .queryParam("movie_name", movieName)
+                    .buildAndExpand()
+                    .toUriString();
+
+            webClient.delete().uri(deleteMovieByNameURI)
+                    .retrieve()
+                    .bodyToMono(Void.class)
+                    .block();
+
+        }catch (WebClientResponseException ex) {
+            log.error("WebClientResponseException in deleteMovie. Status code is {} and the message is {} ", ex.getRawStatusCode(), ex.getResponseBodyAsString());
+            throw new MovieErrorResponse(ex.getStatusText(), ex);
+        } catch (Exception ex) {
+            log.error("Exception in deleteMovie and the message is {} ", ex);
+            throw new MovieErrorResponse(ex);
+        }
+
+        return "Movie Deleted Successfully";
     }
 }

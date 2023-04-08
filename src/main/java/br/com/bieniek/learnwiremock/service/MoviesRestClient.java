@@ -9,8 +9,9 @@ public interface MoviesRestClient {
     List<Movie> retrieveAllMovies();
     Movie retrieveMovieById(Integer movieId);
     List<Movie> retrieveMovieByName(String movieName);
-    List<Movie> retreieveMovieByYear(Integer year);
+    List<Movie> retrieveMovieByYear(Integer year);
     Movie addNewMovie(Movie newMovie);
     Movie updateMovie(Integer movieId, Movie movie);
     String deleteMovieById(Integer movieId);
+    String deleteMovieByName(String movieName);
 }
